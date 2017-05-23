@@ -6,28 +6,35 @@
 
 .BgFun {
     background:url('../../images/nba2K.gif') no-repeat; 
-    background-size: cover;
+    background-size: contain;
     width:100%;
+    
 }
 
 
 .BgTech {
     background: url('../../images/tech.png') no-repeat;
     width:100%;
-    background-size: cover;
+    background-size: contain;
     /*height:100%:*/
 }
 
 .BgCoding {
     background: url('../../images/coding.gif') no-repeat;
     width:100%;
+    background-size: contain;
     /*height:100%:*/
 }
 
 .BgMusic {
     background: url('../../images/boombox.gif') no-repeat;
     width:100%;
+    background-size: contain;
     /*height:100%:*/
+}
+
+.LockSize{
+    background-size: 600px 600px;
 }
 
 .SmushForm{
