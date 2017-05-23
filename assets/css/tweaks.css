@@ -4,8 +4,28 @@
 
 }
 
-.BG2k {
+.BgFun {
     background:url('../../images/nba2K.gif') no-repeat;
+    width:100%;
+}
+
+
+.BgTech {
+    background: url('../../images/tech.png') no-repeat;
+    width:100%;
+    /*height:100%:*/
+}
+
+.BgCoding {
+    background: url('../../images/coding.gif') no-repeat;
+    width:100%;
+    /*height:100%:*/
+}
+
+.BgMusic {
+    background: url('../../images/boombox.gif') no-repeat;
+    width:100%;
+    /*height:100%:*/
 }
 
 .SmushForm{
@@ -13,9 +33,9 @@
     margin-right: 20px;
 }
 
-.shortBoxes{
+/*.shortBoxes{
     size:50%;
-}
+}*/
 
 /*input[type=text], select, textarea {
     width: 100%;
