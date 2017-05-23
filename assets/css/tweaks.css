@@ -5,7 +5,8 @@
 }
 
 .BgFun {
-    background:url('../../images/nba2K.gif') no-repeat;
+    background:url('../../images/nba2K.gif') no-repeat; 
+    background-size: cover;
     width:100%;
 }
 
@@ -13,6 +14,7 @@
 .BgTech {
     background: url('../../images/tech.png') no-repeat;
     width:100%;
+    background-size: cover;
     /*height:100%:*/
 }
 
