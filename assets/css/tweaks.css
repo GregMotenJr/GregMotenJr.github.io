@@ -8,6 +8,15 @@
     background:url('../../images/nba2K.gif') no-repeat;
 }
 
+.SmushForm{
+    margin-left:20px;
+    margin-right: 20px;
+}
+
+.shortBoxes{
+    size:50%;
+}
+
 /*input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
