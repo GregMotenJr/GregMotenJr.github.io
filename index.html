@@ -334,7 +334,7 @@
 
         <!-- CTA -->
         <section id="cta" class="wrapper style4">
-            <article id="contact" class="container box style3">
+            <!--<article id="contact" class="container box style3">
                 <header>
                     <h2>Email Me</h2>
                     <p>
@@ -358,8 +358,39 @@
                         </div>
                     </div>
                 </form>
-            </article>
+            </article>-->
 
+            <!-- WORKING CONTACT FORM FROM MY WORDPRESS SITE-->
+            <!--<div id="contact-form-3">
+                <form action="https://gregmotenjr.wordpress.com/contact/#contact-form-3" method="post" class="contact-form commentsblock">
+
+                    <div>
+                        <label for="g3-name" class="grunion-field-label name">Name<span>(required)</span></label>
+                        <input type="text" name="g3-name" id="g3-name" value="GregMotenJr" class="name" required="" aria-required="true" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                    </div>
+
+                    <div>
+                        <label for="g3-email" class="grunion-field-label email">Email<span>(required)</span></label>
+                        <input type="email" name="g3-email" id="g3-email" value="gmotenjr@gmail.com" class="email" required="" aria-required="true">
+                    </div>
+
+                    <div>
+                        <label for="g3-website" class="grunion-field-label url">Website</label>
+                        <input type="text" name="g3-website" id="g3-website" value="https://gregmotenjr.wordpress.com" class="url">
+                    </div>
+
+                    <div>
+                        <label for="contact-form-comment-g3-message" class="grunion-field-label textarea">Message<span>(required)</span></label>
+                        <textarea name="g3-message" id="contact-form-comment-g3-message" rows="20" class="textarea" required="" aria-required="true"></textarea>
+                    </div>
+                    <p class="contact-submit">
+                        <input type="submit" value="Submit »" class="pushbutton-wide">
+                        <input type="hidden" id="_wpnonce" name="_wpnonce" value="d8968963f4"><input type="hidden" name="_wp_http_referer" value="/contact/">
+                        <input type="hidden" name="contact-form-id" value="3">
+                        <input type="hidden" name="action" value="grunion-contact-form">
+                    </p>
+                </form>
+            </div>-->
             <!--<div class="inner">
                 <header>
                     <h2>Arcue ut vel commodo</h2>
@@ -370,8 +401,83 @@
                     <li><a href="#" class="button fit">Learn More</a></li>
                 </ul>
             </div>-->
-        </section>
 
+            <!-- W3 EXAMPLE-->
+            <!--<h3>Contact Form</h3>
+
+            <div class="container">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="email" placeholder="Your email address..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Hey Greg..." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        </section>-->
+
+            <!-- bootstrap version-->
+            <article id="contact" class="container box style3">
+                <header>
+                    <h2>Email Me</h2>
+                    <p>
+                        If you would like to Hire Me, provide any feedback on my work,
+                        colaborate, or just want to say hey, Please feel free to contact me via email 
+                        by using the form below or by clicking here -
+                        <a href="mailto:gmotenjr@gmail.com">My Email</a>
+                    </p>
+                    </header>
+                    <form class="form-horizontal" role="form" method="post" action="index.php">
+                        <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="YourEmail@domain.com" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="col-sm-2 control-label">Message</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="4" name="message"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <! Will be used to display an alert to the user>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+</section>
         <!-- Footer -->
         <footer id="footer">
             <ul class="icons">
@@ -380,7 +486,7 @@
             </ul>
             <ul class="copyright">
                 <li>&copy; Greg Moten Jr</li>
-                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                <li>Design: Greg Moten Jr and <a href="http://html5up.net">HTML5 UP</a></li>
             </ul>
         </footer>
 
