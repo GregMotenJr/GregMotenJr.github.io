@@ -7,11 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="images/G.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" />
-    <link rel="stylesheet" href="https//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="http://freeshared.org/css/bootstrap.css">
+    <link rel="stylesheet" href="http://freeshared.org/css/bootstrap.min.css">
+    <script src="http://freeshared.org/js/jquery.js"></script>
+    <script src="http://freeshared.org/js/bootstrap.js"></script>
+    <script src="http://freeshared.org/js/bootstrap.min.js"></script>
+    <script src="http://freeshared.org/js/npm.js"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
     <link rel="stylesheet" href="assets/css/tweaks.css" />
 </head>
 <body class="landing">
@@ -28,7 +35,7 @@
                         <a href="#menu" class="menuToggle"><span>Menu</span></a>
                         <div id="menu">
                             <ul>
-                                    <li><a href="#banner" class="more scrolly">HOME</a></li>
+                                <li><a href="#banner" class="more scrolly">HOME</a></li>
                                 <li><a href="#one" class="more scrolly">My Portfolio</a></li>
                                 <li><a href="#three" class="more scrolly">MY TECHNICAL SKILL SET</a></li>
                                 <li><a href="#four" class="more scrolly">MY RESUME</a></li>
@@ -44,17 +51,44 @@
                 </ul>
             </nav>
         </header>
-
+        <!--Music Player!!!!!!!-->
+        <!--<br/>
+        <div class="col-md-12">
+            <audio id="audio" preload="auto"></audio>
+            <div class="btn-group">
+                <button onclick="Play('music.mp3','audio');" class="btn btn-custom"><span title="Play" id="play" class="glyphicon glyphicon-play aligned"></span></button>
+                <button onclick="Stop('music.mp3','audio');" class="btn btn-custom"><span title="Stop" id="stop" class="glyphicon glyphicon-stop aligned"></span></button>
+                <button onclick="Restart('music.mp3','audio');" class="btn btn-custom"><span title="Restart" id="restart" class="glyphicon glyphicon-step-backward aligned"></span></button>
+                <button onclick="Backward5('music.mp3','audio');" class="btn btn-custom"><span title="-5 seconds" id="play" class="glyphicon glyphicon-fast-backward aligned"></span></button>
+                <button onclick="Forward5('music.mp3','audio');" class="btn btn-custom"><span title="+5 seconds" id="play" class="glyphicon glyphicon-fast-forward aligned"></span></button>
+                <button onclick="Backward1('music.mp3','audio');" class="btn btn-custom"><span title="-1 second" id="play" class="glyphicon glyphicon-chevron-left aligned"></span></button>
+                <button onclick="Forward1('music.mp3','audio');" class="btn btn-custom"><span title="+1 second" id="play" class="glyphicon glyphicon-chevron-right aligned"></span></button>
+                <button onclick="VolumeUp('music.mp3','audio');" class="btn btn-custom"><span title="Volume Up" id="volumeup" class="glyphicon glyphicon-plus aligned"></span></button>
+                <button onclick="VolumeDown('music.mp3','audio');" class="btn btn-custom"><span title="Volume Down" id="volumedown" class="glyphicon glyphicon-minus aligned"></span></button>
+            </div>
+        </div>-->
         <!-- Banner -->
         <section id="banner">
             <div class="inner">
+                <!--Music Player-->
+                <br />
+                <div class="col-md-12">
+                    <audio id="audio" preload="auto"></audio>
+                    <div class="btn-group">
+                        <audio controls="controls">
+                            <source src="music.mp3" type="audio/mpeg" />
+                        </audio>
+                    </div>
+                </div>
+                <!-- END music player-->
+
                 <h2>Greg Moten Jr.</h2>
                 <br />
                 <div>
                     <img style="height:300px; width:300px;" src="images/2banner.jpg" />
                 </div>
                 <p>
-                    I'm Greg, a Full Stack Software Engineer Apprentice with a passion for music and technology
+                    Hi I'm Greg! A Full Stack Software Engineer Apprentice with a passion for music and technology
                     currently specializing in .NET applications.
                 </p>
                 <!--<p>You can check out my GitHub Page here</p>-->
@@ -89,7 +123,8 @@
         <!-- Two -->
         <section id="two" class="wrapper alt style2">
             <section class="spotlight">
-                <div class="image"><img src="images/007.gif" alt="" /></div><div class="content">
+                <div class="image spotImgSize"><img src="images/007.gif" alt="" /></div>
+                <div class="content">
                     <h2>Bank Account<br /></h2>
                     <p>
                         <strong>Assignment:</strong> Create a Bank Account Console Application to manage a
@@ -101,7 +136,8 @@
             </section>
 
             <section class="spotlight">
-                <div class="image"><img src="images/IronArmada.gif" alt="" /></div><div class="content">
+                <div class="image spotImgSize"><img src="images/IronArmada.gif" alt="" /></div>
+                <div class="content">
                     <h2>Wardrobe Web App<br /></h2>
                     <p>
                         <strong>Assignment:</strong>  Build a wardrobe web application to manage a users clothes,
@@ -114,7 +150,8 @@
             </section>
 
             <section class="spotlight">
-                <div class="image"><img src="images/WT.gif" alt="" /></div><div class="content">
+                <div class="image spotImgSize"><img src="images/WT.gif" alt="" /></div>
+                <div class="content">
                     <h2>Bank Account<br /></h2>
                     <p>
                         <strong>Assignment:</strong> Create a web application for a user to submit reviews on techknowledgey,
@@ -158,7 +195,7 @@
             </div>
         </section>
 
-
+    
         <!--Four-->
         <section id="four" class="wrapper style1 special" style="padding:1em;">
             <div class="inner">
@@ -283,43 +320,91 @@
         </section>
 
         <!-- Five -->
-        <section id="five" class="wrapper style3 special" style="padding:3em">
-            <div class="inner">
-                <header class="major">
-                    <h2>Hobbies</h2>
-                    <!--<p>C# | .NET | ASP.net | JavaScript | jQuery | HTML5 | CSS3 | Bootstrap | MVC | MSSQL | Git</p>-->
+        <section id="five" class="wrapper alt style2">
+            <header class="major align-center">
+                <h2>Hobbies</h2>
+                <!--<p>C# | .NET | ASP.net | JavaScript | jQuery | HTML5 | CSS3 | Bootstrap | MVC | MSSQL | Git</p>-->
 
-                </header>
-                <ul class="features">
-                    <li class="icon fa-paper-plane-o BgFun LockSize">
-                        <h3>Fun!</h3>
-                        <br />
-                        <p>* Video games</p>
-                        <p>* Listen to podcasts</p>
-                        <p>* Read new books</p>
-                        <p>* Listen to music </p>
-                        <!--<div class="image"> <img src="images/nba2K.gif" /> </div>-->
+            </header>
+            <section class="spotlight">
+                
+                <div class="image spotImgSize"><img src="images/nba2K.gif" alt="" /></div>
+                <div class="content">
+                    <h2>Things I do for fun<br /></h2>
+                    <p>* Video games</p>
+                    <p>* Listen to podcasts</p>
+                    <p>* Read new books</p>
+                    <p>* Listen to music </p>
+                </div>
+            </section>
 
-                    </li>
-                    <li class="icon fa-laptop BgTech LockSize">
-                        <h3>Tech</h3>
-                        <br />
-                        <p>* Experimenting with the raspberry pi</p>
-                        <p>* Interconnectivity of different systems</p>
-                    </li>
-                    <li class="icon fa-code BgCoding LockSize">
-                        <h3>Coding</h3>
-                        <br />
-                        <p>* Completing online courses to further my knowledge and skills</p>
-                        <p>* Solving tough coding problems</p>
-                    </li>
-                    <li class="icon fa-headphones BgMusic LockSize">
-                        <h3>Music</h3>
-                        <br />
-                        <p>* Ever since I was a child I have always been intrigued by music</p>
-                        <p>* In my free time I like to write lyrics, compose, and produce music  </p>
-                    </li>
-                    <!--<li class="icon fa-heart-o">
+            <section class="spotlight">
+                <div class="image spotImgSize"><img src="images/tech.png" alt="" /></div>
+                <div class="content">
+                    <h2>Tech<br /></h2>
+                    <p>* Experimenting with the raspberry pi</p>
+                    <p>* Interconnectivity of different systems</p>
+                </div>
+            </section>
+
+            <section class="spotlight">
+                <div class="image spotImgSize"><img src="images/coding.gif" alt="" /></div>
+                <div class="content">
+                    <h2>Coding<br /></h2>
+                    <p>* Completing online courses to further my knowledge and skills</p>
+                    <p>* Solving tough coding problems</p>
+                </div>
+            </section>
+
+            <section class="spotlight">
+                <div class="image spotImgSize"><img src="images/musiclife.gif" alt="" /></div>
+                <div class="content">
+                    <h2>Music<br /></h2>
+                    <p>* Ever since I was a child I have always been intrigued by music</p>
+                    <p>* In my free time I like to write lyrics, compose, and produce music  </p>
+                </div>
+            </section>
+
+            </section> <!-- END OF STYLE 1 SECTION-->
+            
+    <!-- STYLE 2 OF THIS SECTION-->
+            <section id="five" class="wrapper style3 special" style="padding:3em">
+                <div class="inner">
+                    <header class="major">
+                        <h2 style="font-size:40px">Hobbies</h2>
+
+                    </header>
+                    <ul class="features">
+                        <li class="icon fa-paper-plane-o BgFun LockSize">
+                            <h3>Fun!</h3>
+                            <br />
+                            <p>* Video games</p>
+                            <p>* Listen to podcasts</p>
+                            <p>* Read new books</p>
+                            <p>* Listen to music </p>
+                            <!--<div class="image"> <img src="images/nba2K.gif" /> </div>-->
+
+                        </li>
+                        <li class="icon fa-laptop BgTech LockSize">
+                            <h3>Tech</h3>
+                            <br />
+                            <p>* Experimenting with the raspberry pi</p>
+                            <p>* Interconnectivity of different systems</p>
+                        </li>
+
+                        <li class="icon fa-code BgCoding LockSize">
+                            <h3>Coding</h3>
+                            <br />
+                            <p>* Completing online courses to further my knowledge and skills</p>
+                            <p>* Solving tough coding problems</p>
+                        </li>
+                        <li class="icon fa-headphones BgMusic LockSize">
+                            <h3>Music</h3>
+                            <br />
+                            <p>* Ever since I was a child I have always been intrigued by music</p>
+                            <p>* In my free time I like to write lyrics, compose, and produce music  </p>
+                        </li>
+                        <!--<li class="icon fa-heart-o">
                         <h3>Aenean Primis</h3>
                         <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
                     </li>
@@ -327,13 +412,13 @@
                         <h3>Tortor Ut</h3>
                         <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
                     </li>-->
-                </ul>
-            </div>
-        </section>
+                    </ul>
+                </div>
+            </section>
 
-        <!-- CTA -->
-        <section id="cta" class="wrapper style4">
-            <!--<article id="contact" class="container box style3">
+            <!-- CTA -->
+            <section id="cta" class="wrapper style4">
+                <!--<article id="contact" class="container box style3">
                 <header>
                     <h2>Email Me</h2>
                     <p>
@@ -358,9 +443,8 @@
                     </div>
                 </form>
             </article>-->
-
-            <!-- WORKING CONTACT FORM FROM MY WORDPRESS SITE-->
-            <!--<div id="contact-form-3">
+                <!-- WORKING CONTACT FORM FROM MY WORDPRESS SITE-->
+                <!--<div id="contact-form-3">
                 <form action="https://gregmotenjr.wordpress.com/contact/#contact-form-3" method="post" class="contact-form commentsblock">
 
                     <div>
@@ -390,7 +474,7 @@
                     </p>
                 </form>
             </div>-->
-            <!--<div class="inner">
+                <!--<div class="inner">
                 <header>
                     <h2>Arcue ut vel commodo</h2>
                     <p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
@@ -400,45 +484,43 @@
                     <li><a href="#" class="button fit">Learn More</a></li>
                 </ul>
             </div>-->
+                <!-- W3 EXAMPLE-->
+                <!--<h3>Contact Form</h3>
 
-            <!-- W3 EXAMPLE-->
-            <!--<h3>Contact Form</h3>
+                <div class="container">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-            <div class="container">
-                <form action="/action_page.php">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="email" placeholder="Your email address..">
 
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="email" placeholder="Your email address..">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
 
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                    </select>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Hey Greg..." style="height:200px"></textarea>
 
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Hey Greg..." style="height:200px"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
 
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-
-        </section>-->
-
-            <!-- bootstrap version-->
-            <article id="contact" class="container box style3 SmushForm">
-                <header>
-                    <h2>Email Me</h2>
-                    <p>
-                        If you would like to Hire Me, provide any feedback on my work,
-                        colaborate, or just want to say hey, Please feel free to contact me via email 
-                        by using the form below or by clicking here -
-                        <a href="mailto:gmotenjr@gmail.com"><strong>My Email</strong></a>
-                        <br/> <span>** Update**</span> <br/><span>This form is currently broken for the time being, please just use the link provided above to send me a email, Thank you</span>
-                    </p>
+            </section>-->
+                <!-- bootstrap version-->
+                <article id="contact" class="container box style3 SmushForm">
+                    <header>
+                        <h2>Email Me</h2>
+                        <p>
+                            If you would like to Hire Me, provide any feedback on my work,
+                            colaborate, or just want to say hey, Please feel free to contact me via email
+                            by using the form below or by clicking here -
+                            <a href="mailto:gmotenjr@gmail.com"><strong>My Email</strong></a>
+                            <br /> <span>** Update**</span> <br /><span>This form is currently broken for the time being, please just use the link provided above to send me a email, Thank you</span>
+                        </p>
                     </header>
                     <form class="form-horizontal" role="form" method="post" action="index.php">
                         <div class="form-group">
@@ -477,23 +559,22 @@
                         </div>
                     </form>
                 </article>
-</section>
+            </section>
 
 
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="icons">
-                <!--<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
-                <li><a href="mailto:gmotenjr@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Greg Moten Jr</li>
-                <li>Design: Greg Moten Jr and <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </footer>
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <!--<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
+                    <li><a href="mailto:gmotenjr@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Greg Moten Jr</li>
+                    <li>Design: Greg Moten Jr and <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </footer>
 
-    </div><!-- END page wrapper-->
-
+</div><!-- END page wrapper-->
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
