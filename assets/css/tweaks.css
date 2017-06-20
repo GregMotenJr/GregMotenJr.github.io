@@ -1,14 +1,12 @@
 ﻿.hobbiesList {
     padding:1em 1em 1em 1em;
     display:normal;
-
 }
 
 .BgFun {
     background:url('../../images/nba2K.gif') no-repeat; 
     background-size: contain;
     width:100%;
-    
 }
 
 
@@ -40,6 +38,16 @@
 .SmushForm{
     margin-left:20px;
     margin-right: 20px;
+}
+
+.whiteFont{
+    color:white;
+}
+
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*.shortBoxes{

@@ -6,12 +6,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="images/G.png" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" />
-    <link rel="stylesheet" href="https//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <link rel="stylesheet" href="assets/css/tweaks.css" />
 </head>
 <body class="landing">
@@ -28,7 +26,7 @@
                         <a href="#menu" class="menuToggle"><span>Menu</span></a>
                         <div id="menu">
                             <ul>
-                                    <li><a href="#banner" class="more scrolly">HOME</a></li>
+                                <li><a href="#banner" class="more scrolly">HOME</a></li>
                                 <li><a href="#one" class="more scrolly">My Portfolio</a></li>
                                 <li><a href="#three" class="more scrolly">MY TECHNICAL SKILL SET</a></li>
                                 <li><a href="#four" class="more scrolly">MY RESUME</a></li>
@@ -157,7 +155,6 @@
                 </ul>
             </div>
         </section>
-
 
         <!--Four-->
         <section id="four" class="wrapper style1 special" style="padding:1em;">
@@ -291,33 +288,42 @@
 
                 </header>
                 <ul class="features">
-                    <li class="icon fa-paper-plane-o BgFun LockSize">
+                    <li class="icon fa-paper-plane-o BgFun LockSize img-responsive">
                         <h3>Fun!</h3>
                         <br />
-                        <p>* Video games</p>
-                        <p>* Listen to podcasts</p>
-                        <p>* Read new books</p>
-                        <p>* Listen to music </p>
+                        <div class="whiteFont">
+                            <p>* Video games</p>
+                            <p>* Listen to podcasts</p>
+                            <p>* Read new books</p>
+                            <p>* Listen to music </p>
+                        </div>
                         <!--<div class="image"> <img src="images/nba2K.gif" /> </div>-->
 
                     </li>
                     <li class="icon fa-laptop BgTech LockSize">
                         <h3>Tech</h3>
                         <br />
-                        <p>* Experimenting with the raspberry pi</p>
-                        <p>* Interconnectivity of different systems</p>
+                        <div class="whiteFont">
+                            <p>* Experimenting with the raspberry pi</p>
+                            <p>* Interconnectivity of different systems</p>
+                        </div>
                     </li>
+
                     <li class="icon fa-code BgCoding LockSize">
                         <h3>Coding</h3>
                         <br />
-                        <p>* Completing online courses to further my knowledge and skills</p>
-                        <p>* Solving tough coding problems</p>
+                        <div class="whiteFont">
+                            <p>* Completing online courses to further my knowledge and skills</p>
+                            <p>* Solving tough coding problems</p>
+                        </div>
                     </li>
                     <li class="icon fa-headphones BgMusic LockSize">
                         <h3>Music</h3>
                         <br />
-                        <p>* Ever since I was a child I have always been intrigued by music</p>
-                        <p>* In my free time I like to write lyrics, compose, and produce music  </p>
+                        <div class="whiteFont">
+                            <p>* Ever since I was a child I have always been intrigued by music</p>
+                            <p>* In my free time I like to write lyrics, compose, and produce music</p>
+                        </div>
                     </li>
                     <!--<li class="icon fa-heart-o">
                         <h3>Aenean Primis</h3>
@@ -358,7 +364,6 @@
                     </div>
                 </form>
             </article>-->
-
             <!-- WORKING CONTACT FORM FROM MY WORDPRESS SITE-->
             <!--<div id="contact-form-3">
                 <form action="https://gregmotenjr.wordpress.com/contact/#contact-form-3" method="post" class="contact-form commentsblock">
@@ -390,94 +395,82 @@
                     </p>
                 </form>
             </div>-->
-            <!--<div class="inner">
-                <header>
-                    <h2>Arcue ut vel commodo</h2>
-                    <p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
-                </header>
-                <ul class="actions vertical">
-                    <li><a href="#" class="button fit special">Activate</a></li>
-                    <li><a href="#" class="button fit">Learn More</a></li>
-                </ul>
-            </div>-->
-
             <!-- W3 EXAMPLE-->
             <!--<h3>Contact Form</h3>
 
-            <div class="container">
-                <form action="/action_page.php">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <div class="container">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="email" placeholder="Your email address..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="email" placeholder="Your email address..">
 
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                    </select>
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
 
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Hey Greg..." style="height:200px"></textarea>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Hey Greg..." style="height:200px"></textarea>
 
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
 
-        </section>-->
-
+            </section>-->
             <!-- bootstrap version-->
             <article id="contact" class="container box style3 SmushForm">
                 <header>
                     <h2>Email Me</h2>
                     <p>
                         If you would like to Hire Me, provide any feedback on my work,
-                        colaborate, or just want to say hey, Please feel free to contact me via email 
+                        colaborate, or just want to say hey, Please feel free to contact me via email
                         by using the form below or by clicking here -
                         <a href="mailto:gmotenjr@gmail.com"><strong>My Email</strong></a>
-                        <br/> <span>** Update**</span> <br/><span>This form is currently broken for the time being, please just use the link provided above to send me a email, Thank you</span>
+                        <br /> <span>** Update**</span> <br /><span>This form is currently broken for the time being, please just use the link provided above to send me a email, Thank you</span>
                     </p>
-                    </header>
-                    <form class="form-horizontal" role="form" method="post" action="index.php">
-                        <div class="form-group">
-                            <label for="name" class="col-sm-2 control-label">Name</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
-                            </div>
+                </header>
+                <form class="form-horizontal" role="form" method="post" action="index.php">
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
                         </div>
-                        <div class="form-group">
-                            <label for="email" class="col-sm-2 control-label">Email</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="YourEmail@domain.com" value="">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="YourEmail@domain.com" value="">
                         </div>
-                        <div class="form-group">
-                            <label for="message" class="col-sm-2 control-label">Message</label>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" rows="4" name="message"></textarea>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="col-sm-2 control-label">Message</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="4" name="message"></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
                         </div>
-                        <div class="form-group">
-                            <div class="col-sm-10 col-sm-offset-2">
-                                <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
                         </div>
-                        <div class="form-group">
-                            <div class="col-sm-10 col-sm-offset-2">
-                                <! Will be used to display an alert to the user>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <! Will be used to display an alert to the user>
                         </div>
-                    </form>
-                </article>
-</section>
+                    </div>
+                </form>
+            </article>
+        </section>
 
 
         <!-- Footer -->
@@ -493,7 +486,6 @@
         </footer>
 
     </div><!-- END page wrapper-->
-
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
